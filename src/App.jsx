@@ -5,6 +5,7 @@ import './App.css'
 import Cakecontainer from './components/Cakecontainer'
 import {Provider} from 'react-redux'
 import store from './redux/store'
+import HooksCakeContainer from './components/HooksCakeContainer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +13,8 @@ function App() {
   return (
    <>
    <Provider store={store}>
-   <Cakecontainer/>
+   {/* <Cakecontainer/> */}
+   <HooksCakeContainer/>
    </Provider>
     </>
   )
