@@ -14,7 +14,7 @@ function Cakecontainer(props) {
 // It change the numOfCakes state in props so when we click on the button so it change the state of the store object props.numOfCakes
 const mapStateToProps=(state)=>{
   return{
-    numOfCakes:state.numOfCakes
+    numOfCakes:state.cake.numOfCakes
   }
 }
 
