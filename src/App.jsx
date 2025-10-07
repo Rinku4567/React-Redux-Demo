@@ -7,6 +7,8 @@ import {Provider} from 'react-redux'
 import store from './redux/store'
 import HooksCakeContainer from './components/HooksCakeContainer'
 import Icecreamcontainer from './components/Icecreamcontainer'
+import NewCakeContainer from './components/NewCakeContainer'
+import UserContainer from './components/UserContainer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,9 +16,11 @@ function App() {
   return (
    <>
    <Provider store={store}>
-   <Cakecontainer/>
+    <UserContainer/>
+   {/* <Cakecontainer/>
    <HooksCakeContainer/>
    <Icecreamcontainer/>
+   <NewCakeContainer/> */}
    </Provider>
     </>
   )
